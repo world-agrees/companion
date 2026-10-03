@@ -1,0 +1,4 @@
+Fictional scheduling example for one person working on tasks in sequence.
+Hours available before Friday: 14
+The task durations are estimates, not measured completion times.
+No additional person, overtime, or reduced scope has been approved.

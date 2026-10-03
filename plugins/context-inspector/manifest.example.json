@@ -1,0 +1,14 @@
+{
+  "owner": "example-reader",
+  "domain": "release",
+  "records": [
+    {
+      "id": "test-log-42",
+      "text": "Build 42: eighteen passed, two failed.",
+      "kind": "evidence",
+      "source": "local fixture, not a production result",
+      "status": "current",
+      "check": "demonstration only"
+    }
+  ]
+}

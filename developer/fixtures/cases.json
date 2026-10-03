@@ -1,0 +1,25 @@
+[
+  {
+    "id": "release-readiness",
+    "question": "Do the available results establish that release build 42 passed the required checks?",
+    "evidence": [
+      {"id": "test-log-42", "text": "Build 42: 18 passed, 2 failed."},
+      {"id": "policy-1", "text": "All required tests must pass before release."}
+    ],
+    "expected_verdict": "not_established",
+    "allowed_evidence": ["test-log-42", "policy-1"],
+    "required_evidence": ["test-log-42", "policy-1"],
+    "required_qualifications": ["two_required_tests_failed"]
+  },
+  {
+    "id": "corrected-memory",
+    "question": "Does the current record establish that all tests passed?",
+    "evidence": [
+      {"id": "correction-2", "text": "The earlier passing summary was wrong. Two required tests failed."}
+    ],
+    "expected_verdict": "not_established",
+    "allowed_evidence": ["correction-2"],
+    "required_evidence": ["correction-2"],
+    "required_qualifications": ["old_summary_superseded"]
+  }
+]

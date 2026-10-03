@@ -1,0 +1,4 @@
+task_id,task,estimated_hours,depends_on
+T1,Implement the data import,8,
+T2,Run integration tests,7,T1
+T3,Document the handoff,5,T2
