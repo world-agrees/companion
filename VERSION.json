@@ -1,7 +1,20 @@
 {
-  "version": "2026-10-02-review",
-  "documentation_checked": "2026-10-02",
+  "version": "2026-10-03-companion-delivery",
+  "documentation_checked": "2026-10-03",
   "book_part": "III",
-  "status": "local review companion",
-  "live_model_evaluations_performed": false
+  "status": "public companion",
+  "repository": "https://github.com/world-agrees/companion",
+  "live_model_evaluations_performed": false,
+  "updated_guides": [
+    "chatgpt",
+    "claude",
+    "hermes",
+    "openclaw",
+    "memory-services",
+    "devils-advocate",
+    "evidence-workspace",
+    "calculation-and-research",
+    "developer-api-controls"
+  ],
+  "note": "Chapters 8\u201311 controls and workflows were documentation-checked October 3. Hermes and OpenClaw directions retain pinned source revisions. New OpenAI and Anthropic payload builders and the release-gate pipeline run offline with synthetic data; no live API integration or model evaluation was performed. Other product guides retain their individually stated check dates."
 }

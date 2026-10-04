@@ -2,4 +2,4 @@
 
 Copyright (c) 2026 Timothy O'Brien. All rights reserved.
 
-This companion is part of the unpublished book's review materials. The source book repository is private. No open-source license or public redistribution license is granted by this draft. Publication and distribution terms will be set by the author.
+This is the publicly available companion to *The World That Agrees With You*. Public availability does not grant an open-source license or a general redistribution license. Any additional permissions must be granted by the author.

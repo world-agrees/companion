@@ -1,0 +1,198 @@
+{
+  "status": "passed",
+  "executed_at": "2026-10-03T20:04:54.657636+00:00",
+  "source": "Chapter 9 hypothetical example; not observed costs",
+  "source_version_date": "2026-10-03",
+  "inputs": {
+    "B21": "48000.00",
+    "B22": "36000.00",
+    "B23": "15000.00"
+  },
+  "calculation_engine": "Python Decimal restricted evaluation of this script's explicit formulas",
+  "cache_origin": "Executed Python calculation supplied to xlsxwriter; inspected with openpyxl",
+  "runtime": "Python 3.12.14",
+  "libraries": {
+    "openpyxl": "3.1.5",
+    "xlsxwriter": "3.2.9"
+  },
+  "native_spreadsheet_application_recalculation": "not performed",
+  "assumptions": [
+    "five undiscounted years",
+    "unchanged annual costs",
+    "implementation in year one",
+    "no other costs, taxes, inflation, financing, or savings assumed"
+  ],
+  "calculation_checks": [
+    {
+      "check": "Recurring annual saving",
+      "expected": "12000",
+      "observed": "12000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "First-year proposed cost",
+      "expected": "51000",
+      "observed": "51000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "First-year additional cost",
+      "expected": "3000",
+      "observed": "3000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Five-year current cost",
+      "expected": "240000",
+      "observed": "240000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Five-year proposed cost",
+      "expected": "195000",
+      "observed": "195000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Five-year saving",
+      "expected": "45000",
+      "observed": "45000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Five-year saving equals sum of annual savings",
+      "expected": "45000.00",
+      "observed": "45000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "First-year extra cost reconciles to implementation less annual saving",
+      "expected": "3000.00",
+      "observed": "3000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Year 1 cumulative saving",
+      "expected": "-3000",
+      "observed": "-3000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Year 2 cumulative saving",
+      "expected": "9000",
+      "observed": "9000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Year 3 cumulative saving",
+      "expected": "21000",
+      "observed": "21000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Year 4 cumulative saving",
+      "expected": "33000",
+      "observed": "33000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Year 5 cumulative saving",
+      "expected": "45000",
+      "observed": "45000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Zero implementation cost: first-year saving",
+      "expected": "12000",
+      "observed": "12000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Higher implementation cost reverses five-year saving",
+      "expected": "-15000",
+      "observed": "-15000.00",
+      "outcome": "passed"
+    },
+    {
+      "check": "Decimal cents retained over five years",
+      "expected": "195000.05",
+      "observed": "195000.05",
+      "outcome": "passed"
+    },
+    {
+      "check": "Missing input rejected",
+      "outcome": "passed"
+    }
+  ],
+  "saved_formula_cache_check_count": 32,
+  "saved_formula_cache_outcome": "all passed",
+  "summary_cell_checks": [
+    {
+      "cell": "Costs!B5",
+      "formula": "=B21-B22",
+      "cached_value": "12000",
+      "recomputed_value": "12000",
+      "outcome": "passed"
+    },
+    {
+      "cell": "Costs!B6",
+      "formula": "=E14",
+      "cached_value": "51000",
+      "recomputed_value": "51000",
+      "outcome": "passed"
+    },
+    {
+      "cell": "Costs!B7",
+      "formula": "=E14-B14",
+      "cached_value": "3000",
+      "recomputed_value": "3000",
+      "outcome": "passed"
+    },
+    {
+      "cell": "Costs!B8",
+      "formula": "=SUM(B14:B18)",
+      "cached_value": "240000",
+      "recomputed_value": "240000",
+      "outcome": "passed"
+    },
+    {
+      "cell": "Costs!B9",
+      "formula": "=SUM(E14:E18)",
+      "cached_value": "195000",
+      "recomputed_value": "195000",
+      "outcome": "passed"
+    },
+    {
+      "cell": "Costs!B10",
+      "formula": "=B8-B9",
+      "cached_value": "45000",
+      "recomputed_value": "45000",
+      "outcome": "passed"
+    }
+  ],
+  "workbook_sha256": "138317498648ce2fa5295743c61e660c71ea455b2fbe6650f956e7dd2fbab5e7",
+  "additional_review": {
+    "engine": "@oai/artifact-tool",
+    "performed_at": "2026-10-03T20:06:32.701974+00:00",
+    "baseline_summary_checks": {
+      "count": 6,
+      "outcome": "passed"
+    },
+    "changed_input": {
+      "cell": "Costs!B22",
+      "value_usd": "40000",
+      "five_year_saving_usd": "25000",
+      "outcome": "passed"
+    },
+    "restored_input": {
+      "cell": "Costs!B22",
+      "value_usd": "36000",
+      "five_year_saving_usd": "45000",
+      "outcome": "passed"
+    },
+    "formula_error_scan_matches": 0,
+    "visual_review": "completed; labels and values legible without overlap",
+    "native_excel_or_libreoffice": "not run",
+    "workbook_byte_reproduction": "identical on a second run with the same inputs and library versions"
+  }
+}

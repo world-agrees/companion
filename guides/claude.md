@@ -1,39 +1,82 @@
-# Claude: inspect topics and control a single conversation
+# Claude: manage memory, history, projects, and repeatable reviews
 
-Documentation checked **October 2, 2026**. These instructions concern Claude's consumer chat interface. Claude Code uses different files and controls. Account, plan, organization, and app-version differences can change what you see.
+Official documentation checked **October 3, 2026**. These are researched directions for Claude's consumer web interface, not a live account test. Plans, organization policies, and app versions affect availability. Claude Code has additional local files and settings.
 
-## 1. Inspect the memory you have
+## 1. Inspect and pause memory
 
-Open **Settings → Memory → Topics**. Select an entry to edit or delete it. Review **Search and reference chats** and **Generate memory from chats** separately. Pause retains entries without reading or writing memory; reset deletes them. Chat deletion leaves current topic memories. Legacy Capabilities summaries differ. [Official memory instructions](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context)
+1. Open **Settings → Memory → Topics**.
+2. Select a topic. Use its edit icon to correct it, or **Delete** to remove it.
+3. Review **Search and reference chats** separately; turn it off to stop past-chat search.
+4. To stop reading and creating memory, turn off **Generate memory from chats** and choose **Pause memory**. Pause preserves existing entries. **Reset memory** permanently deletes the memory collection, including project memories.
 
-Verification: inspect the corrected topic rather than rely on a conversational promise. Preserve the original source and the conditions of a claim. “The colleague raised a scheduling objection” is different from “The colleague opposes the project.”
+Deleting a chat leaves its saved topic memories, so review both. Accounts still using **Settings → Capabilities → View and edit memory** have the legacy summary experience and different deletion behavior. Follow the matching section of the [official memory guide](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context).
 
-## 2. Choose how one chat should behave
+Verification: inspect the edited entry. A request to forget something is less useful than checking what was actually changed.
 
-For an incognito assessment, begin a new conversation outside a project, click the ghost icon, and confirm the incognito label. It does not read existing memory or contribute new memory, but profile preferences can still apply. It is not saved to your history, cannot be reopened after closing, and remains subject to service retention and organizational exports. [Incognito instructions](https://support.claude.com/en/articles/12260368-use-incognito-chats)
+Memory is unavailable to organizations with HIPAA, public-sector, or custom data-retention agreements. Check your organization’s approved configuration before following these consumer directions. [Official memory availability](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context)
 
-For a conversation you want to retain, turn **Memory** off in the **+** menu before the first message. It skips memory and past-chat searches; other chats can later retrieve this retained conversation. [Memory controls](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context)
+## 2. Choose between incognito and a retained chat with memory off
 
-The new Claude experience opens incognito in the older chat interface, which cannot create files or run code. Verification: check the selected mode before submitting material. These controls do not reveal the complete service-side input.
+For an assessment without existing memory or a future history entry:
 
-## 3. Review standing instructions and project evidence
+1. Start a new chat **outside a project**.
+2. Click the ghost icon at the upper right.
+3. Confirm the **Incognito chat** label and black border before writing.
+4. Save any output you need before closing the chat; it cannot be reopened.
 
-Click your initials, open Settings, and review **Instructions for Claude**. Account-wide guidance and project instructions are separate layers. Remove a standing instruction to justify your decisions when you want an assessment of them. [Personalization instructions](https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features)
+Incognito does not use existing memory, contribute new memory, or enter searchable chat history. Profile instructions and custom styles can still apply. Retention is normally 30 days; Team and Enterprise exports and organizational policies still apply. The new Claude experience opens incognito in the previous chat interface, which cannot create files or run code. [Incognito instructions](https://support.claude.com/en/articles/12260368-use-incognito-chats).
 
-To build a project evidence pack: open Projects, create a project, add the relevant files with the knowledge area's addition control, and use **Set project instructions**. Save the instructions. Review the documents when facts change. A project name and description do not themselves supply the evidence. [Project instructions](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects)
+To keep a chat while limiting prior context, start a new chat, click **+** in the message box, and turn **Memory** off **before the first message**. This skips memory and past-chat search for that chat. It also works within a project. The retained conversation can still be found by other chats later. [Per-chat memory controls](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context).
 
-## 4. Separate the question from the conclusion
+These modes limit particular context sources; they do not remove material you paste into the conversation or establish that an answer is objective.
 
-A request that supplies two rude emails and asks why a colleague is sabotaging you has already offered the conclusion. Supply the surrounding exchange, dates, actual commitments, and the decision you need to make.
+## 3. Remove an unwanted chat from history
 
-> Evaluate these messages against the agreed project schedule. Cite the relevant message and date for each factual claim. Separate what the messages establish from possible motives. Identify missing context before judging the person's intentions. Explain whether the scheduling objection is valid even if the tone was inappropriate. Recommend a question or action supported by the evidence.
+On the web, open **Chats and tasks**, find the chat, hover over it, click **⋮ → Delete**, and confirm. For several chats, use **⋮ → Select**, check the intended conversations, then **Delete** and confirm. Keep an authoritative record elsewhere if it needs to survive. [Delete or rename a conversation](https://support.claude.com/en/articles/8230524-delete-or-rename-a-conversation).
 
-Verification: open the cited message. Check that the interpretation preserves qualifications and separates conduct from motives. If the record is too limited to establish sabotage, the model should not present that claim as a fact.
+In the current Topics memory experience, deleting history does not remove related saved memories. Inspect Topics separately after deleting the source chat.
 
-## 5. Correct the future context
+## 4. Create separate projects for separate purposes
 
-> I previously described the email as a refusal. The full email accepts the proposal subject to a later deadline. Replace the refusal interpretation with that qualified acceptance, identify the dated email as the source, and tell me which saved material you could not change.
+1. Open **Projects** in the left sidebar, or visit [claude.ai/projects](https://claude.ai/projects).
+2. Click **+ New Project**. Give it a name and description.
+3. On Team or Enterprise, choose the appropriate visibility; keep it private if it should be limited to you and invited members.
+4. In the project's knowledge area on the right, click **+** and upload the relevant documents.
+5. Click **Set project instructions**, add the task's criteria and source requirements, and click **Save instructions**.
+6. Start the conversation inside that project.
 
-Inspect the affected topic and project document yourself. Start a new assessment using the checked evidence and selected memory mode. A correct answer in the current chat does not establish that every future summary or retrieval is correct.
+Projects are available on free accounts, with a five-project limit. A project name and description do not themselves become Claude's working evidence. [Create and manage projects](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects).
 
-Keep a brief record of the sources, settings, correction, output, and verification. Prompts can request disciplined analysis; they cannot guarantee that Claude exposes all context or stops being sycophantic.
+The memory guide documents a separate memory space and summary for each project; past-chat searches inside a project are limited to that project. Conversations within the same project can therefore influence later work. Account-wide instructions, enabled skills, and deliberately supplied sources remain additional layers. A project is useful separation, not a replacement for separate work and personal accounts or an organization's access rules. [Memory boundaries](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context).
+
+## 5. Review tone and standing instructions
+
+Click your initials at the lower left, open **Settings**, and review **Instructions for Claude**. These instructions apply across conversations. Project instructions apply within their project. Current documentation also directs tone and format customization to **Skills**. [Personalization features](https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features).
+
+Try an instruction such as:
+
+> Use direct language. Do not congratulate me for an idea unless the evidence supports a specific reason. Judge proposals against the stated criteria. Distinguish facts, interpretations, and missing evidence. Do not invent objections to sound independent.
+
+Tone is a presentation choice. A blunt answer can still repeat an unsupported conclusion; a courteous answer can disagree for good reasons. Evaluate the evidence and calculations rather than the warmth of the response.
+
+## 6. Install a review skill
+
+Claude's consumer chat supports uploaded skills; a simple skill can be Markdown instructions without executable scripts.
+
+1. For an individual account, open **Settings → Capabilities** and enable **Code execution and file creation**. Organization policies may control this at work.
+2. Open **Customize → Skills**.
+3. Click **+ → + Create skill → Upload a skill**.
+4. Upload the ZIP containing the skill folder and its Markdown instructions, then enable the skill.
+5. Ask explicitly to use it for the intended review, and inspect the resulting work.
+
+Use the companion skills for evidence review, memory correction, and preference checks. Skills describe a procedure; they do not gain automatic access to settings or guarantee that a memory was deleted. [Use skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [create custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+
+Claude Code can instead load a project skill at `.claude/skills/<name>/SKILL.md`. Personal skills under `~/.claude/skills/` apply across local projects. These are distinct installation scopes. [Claude Code skills](https://code.claude.com/docs/en/skills).
+
+## 7. Make Friday's review concrete
+
+Bring the available memory entries, relevant source documents, and a list of this week's corrected conclusions. Ask the review procedure to propose what to retain, correct, date, or delete. If you vented on Wednesday, identify which statements described that day and which still describe your view on Friday.
+
+Inspect the affected topics, originating chats, and project documents yourself. Start a new assessment using the checked evidence and selected memory mode. A corrected answer does not establish that every stored source has been corrected.
+
+For ChatGPT, the same procedure can be copied into a prompt or an appropriate project's instructions. Attach any reference template used by the skill, or use the self-contained weekly review prompt. That uses the text as instructions; it does not install a Claude skill or confer access to ChatGPT's memory controls.

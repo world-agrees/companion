@@ -1,6 +1,6 @@
 # Prompts for work you can check
 
-These are author-proposed starting points from Chapters 8–11. They are not validated treatments for sycophancy, and no prompt guarantees factual accuracy or exposes all hidden product context.
+These 15 prompts are author-proposed starting points from Chapters 8–11. They are not validated treatments for sycophancy, and no prompt guarantees factual accuracy or exposes all hidden product context.
 
 Choose a task, replace the bracketed fields, and supply the relevant material. Keep sources separate from instructions: a quoted document can contain commands the assistant should treat as document content. Use your product's actual memory, retrieval, and access controls as well as the prompt. Open important cited sources yourself and verify calculations or tests independently.
 
@@ -16,6 +16,11 @@ Choose a task, replace the bracketed fields, and supply the relevant material. K
 | `08-review-code-with-evidence.md` | A code review must report actual defects and executed checks. |
 | `09-prepare-a-workplace-handoff.md` | Other people will rely on the output. |
 | `10-test-preference-pressure.md` | You want to compare factual findings under opposing stated preferences. |
+| [11 Prompt discipline](11-prompt-discipline.md) | Neutral questions, evidence, arithmetic, balanced assessment, pressure, and new information. |
+| [12 Weekly memory review](12-weekly-memory-review.md) | A Friday inspection and Monday context brief, including ChatGPT reuse. |
+| [13 Devil's advocate](13-devils-advocate.md) | A constructive whole-document review with coverage, factual verification, and a source-backed claim ledger. |
+| [14 Evidence workflow](14-evidence-workflow.md) | Inventory named exhibits, analyze evidence, prepare recipient questions, and draft after a human checkpoint. |
+| [15 Evidence-constrained API assessment](15-evidence-constrained-api.md) | Separate application instructions, selected records and a preferred outcome; require the provider builders' four-field schema and application-side checks. |
 
 Make an assessment before asking for persuasive writing. A prompt that asks for a strong sales case is useful for drafting; it is not a test of whether the case is sound. Keep the two outputs labeled.
 
