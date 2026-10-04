@@ -15,6 +15,12 @@ cd companion
 
 The guides, prompts, templates, skills, and examples are in this repository's root directory. Start with the table below. The repository contains the companion resources; the book is available separately through its website.
 
+## License and scope
+
+The companion's original code, prompts, templates, skills, examples, and guides are licensed under the [Apache License, Version 2.0](LICENSE.md). See [NOTICE](NOTICE) for attribution and scope. **This license covers the companion repository and copies of these companion files. The book manuscript, cover, artwork, and other author projects retain their separate rights.** Linked third-party projects and source material retain their own licenses and rights.
+
+Apache 2.0 was chosen so readers can use, adapt, and share these resources, including in commercial work. It provides an explicit contributor patent license and requires license and attribution notices to be preserved, with changes identified when modified files are redistributed. The goal is to make the book's practical tools reusable while keeping the book's publishing rights separate. The license grants no rights to the author's or book's trademarks beyond the uses it permits; it supplies the resources without a warranty. Read the license for its full terms.
+
 **Chapters 8–11 resources updated October 3, 2026; other guides retain their individual check dates.** Start with one consequential task: inspect its context, supply the original evidence, check the result, and correct material that could influence later answers. These resources make that work concrete. They do not guarantee objective output or expose every hidden input in a hosted product.
 
 ## Choose a starting point
